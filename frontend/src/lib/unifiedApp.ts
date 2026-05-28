@@ -239,6 +239,76 @@ const features = [
       { label: 'Updated', value: "45", note: 'This week' },
     ],
   },
+  {
+    slug: "conversation-console",
+    title: "Conversation Console",
+    href: "/conversation-console",
+    category: "Contact Center Operations",
+    icon: Workflow,
+    summary: "Live conversations, customer context, bot responses, sentiment, and escalation status.",
+    bullets: ["Operational workspace","AI assisted review","Audit-ready output"],
+    metrics: [
+      { label: "Conversation Console", value: "38", note: 'Active items' },
+      { label: 'Exceptions', value: "4", note: 'Need review' },
+      { label: 'Due Soon', value: "7", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "handoff-queue",
+    title: "Handoff Queue",
+    href: "/handoff-queue",
+    category: "Contact Center Operations",
+    icon: Workflow,
+    summary: "Agent handoffs, urgency, ownership, transcript context, SLA timers, and resolution notes.",
+    bullets: ["Operational workspace","AI assisted review","Audit-ready output"],
+    metrics: [
+      { label: "Handoff Queue", value: "49", note: 'Active items' },
+      { label: 'Exceptions', value: "5", note: 'Need review' },
+      { label: 'Due Soon', value: "8", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "knowledge-grounding",
+    title: "Knowledge Grounding",
+    href: "/knowledge-grounding",
+    category: "Contact Center Operations",
+    icon: Workflow,
+    summary: "Answer sources, article coverage, citation quality, stale content, and grounding gaps.",
+    bullets: ["Operational workspace","AI assisted review","Audit-ready output"],
+    metrics: [
+      { label: "Knowledge Grounding", value: "60", note: 'Active items' },
+      { label: 'Exceptions', value: "6", note: 'Need review' },
+      { label: 'Due Soon', value: "9", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "qa-scoring",
+    title: "QA Scoring",
+    href: "/qa-scoring",
+    category: "Contact Center Operations",
+    icon: Workflow,
+    summary: "Conversation scorecards, policy checks, empathy, accuracy, containment, and coaching notes.",
+    bullets: ["Operational workspace","AI assisted review","Audit-ready output"],
+    metrics: [
+      { label: "QA Scoring", value: "71", note: 'Active items' },
+      { label: 'Exceptions', value: "7", note: 'Need review' },
+      { label: 'Due Soon', value: "10", note: 'Next 14 days' },
+    ],
+  },
+  {
+    slug: "intent-analytics",
+    title: "Intent Analytics",
+    href: "/intent-analytics",
+    category: "Contact Center Operations",
+    icon: Workflow,
+    summary: "Top intents, containment, unresolved topics, fallback causes, and automation opportunities.",
+    bullets: ["Operational workspace","AI assisted review","Audit-ready output"],
+    metrics: [
+      { label: "Intent Analytics", value: "82", note: 'Active items' },
+      { label: 'Exceptions', value: "8", note: 'Need review' },
+      { label: 'Due Soon', value: "11", note: 'Next 14 days' },
+    ],
+  },
 ] as const;
 
 const aiFeatures = [
@@ -286,6 +356,7 @@ export const featureNav: NavItem[] = allFeatures.map((feature) => ({ label: feat
 export const featureCatalog: FeatureDefinition[] = allFeatures.map((feature) => ({ title: feature.title, href: feature.href, category: feature.category, summary: feature.summary, bullets: [...feature.bullets] }));
 
 export const featureFamilies = [
+  { name: "Contact Center Operations", features: ["Conversation Console","Handoff Queue","Knowledge Grounding","QA Scoring","Intent Analytics"] },
   {
     "name": "Conversation AI",
     "features": [

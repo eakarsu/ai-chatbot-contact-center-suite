@@ -8,3 +8,5 @@
 - WhatsApp/Web Chat operating view
 - Intents operating view
 - Analytics operating view
+
+- Contact Center Operations operating view

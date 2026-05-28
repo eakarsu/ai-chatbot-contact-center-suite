@@ -20,3 +20,13 @@
 | /documents | Documents workspace |
 | /source-tables | Source table inventory and rows |
 | /profiles | User and role settings |
+
+- `/conversation-console`
+
+- `/handoff-queue`
+
+- `/knowledge-grounding`
+
+- `/qa-scoring`
+
+- `/intent-analytics`

@@ -1,5 +1,21 @@
 export const sourceProjectTools = [
   {
+    "id": "contact-center-operations-copilot",
+    "title": "Contact Center Operations Copilot",
+    "category": "Contact Center Operations",
+    "description": "AI tool for Contact Center Operations inside the existing merged suite.",
+    "defaultPrompt": "Review the Contact Center Operations context. Return workflow summary, risks, missing information, recommended actions, owner assignments, and audit-ready output.",
+    "inputLabel": "Contact Center Operations context",
+    "outputLabel": "Contact Center Operations AI response",
+    "signals": [
+      "Conversation Console",
+      "Handoff Queue",
+      "Knowledge Grounding",
+      "QA Scoring",
+      "Intent Analytics"
+    ]
+  },
+  {
     "id": "chatbots-source-workflow",
     "title": "Chatbots Source Workflow",
     "category": "Conversation AI",

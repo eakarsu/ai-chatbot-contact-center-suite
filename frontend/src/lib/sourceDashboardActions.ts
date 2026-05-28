@@ -10,6 +10,26 @@ export type SourceDashboardAction = {
 
 export const sourceDashboardActions: SourceDashboardAction[] = [
   {
+    "id": "contact-center-operations",
+    "label": "Contact Center Operations",
+    "description": "Open Contact Center Operations workflows inside this existing merged suite.",
+    "href": "/conversation-console",
+    "sourceProjects": [
+      "AIChatbotBuilder",
+      "AiCustomerSupportAgent",
+      "AISMSchatbot",
+      "AIConsumerComplaintResolutionAgent"
+    ],
+    "examples": [
+      "Conversation Console",
+      "Handoff Queue",
+      "Knowledge Grounding",
+      "QA Scoring",
+      "Intent Analytics"
+    ],
+    "count": 5
+  },
+  {
     "id": "chatbots",
     "label": "Chatbots",
     "description": "Chatbots actions optimized from donor dashboards and exposed as one AI Chatbot Contact Center action group.",
